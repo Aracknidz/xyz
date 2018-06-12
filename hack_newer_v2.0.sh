@@ -180,7 +180,8 @@ scanips ()
 externip ()
 {
  echo "Scanning router ip..."
- externip=$(curl -s http://whatismijnip.nl |cut -d " " -f 5) 
+ #externip=$(curl -s http://whatismijnip.nl |cut -d " " -f 5) 
+ externip=$(curl ifconfig.co)
 }
 
 gateway(){ echo $gateway; }
